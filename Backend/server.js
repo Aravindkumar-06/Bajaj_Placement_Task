@@ -11,6 +11,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 
+app.get('/',(req,res)=>{
+    res.send('Move to this end point: http://localhost:3001/bfhl ')
+})
+
 app.get('/bfhl',(req,res)=>{
     res.send({ operation_code: 1 })
 })
