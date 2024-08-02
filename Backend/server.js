@@ -14,7 +14,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 app.get('/',(req,res)=>{
-    res.send('Move to this end point: http://localhost:3001/bfhl ')
+    res.send(`Move to this EndPoint : http://loaclhost:${PORT}/bfhl`)
 })
 
 app.get('/bfhl',(req,res)=>{
@@ -61,5 +61,5 @@ app.post('/bfhl', (req, res) => {
 
 const PORT = process.env.PORT || 3001 
 app.listen(PORT, ()=>{
-    console.log('Server is running at port 3000')
+    console.log(`http://localhost:${PORT}`)
 })
