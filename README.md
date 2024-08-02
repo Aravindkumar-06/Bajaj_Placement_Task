@@ -3,7 +3,7 @@
 <p>
   <h1>Backend</h1>
 <h3>Objective</h3>
-  <p>
+<p>
 Build and deploy a REST API with one endpoint that accepts requests with both GET and POST methods.
 POST method endpoint takes in the request (JSON) and returns the following:
 1. Status
@@ -100,4 +100,39 @@ Response
 
 }
 </p>
+<p>
+<h1>Frontend</h1>
+<h3>Objective</h3>
+  <p>
+Develop and deploy a frontend application that uses the backend you’ve developed to process the input and
+get response, then render it on frontend. (Preferably React based – including frameworks like Next.js, but
+that’s optional).
+
+Logic
+1. The application should have a text input that accepts JSONs that are from the previous section’s
+(backend’s) request. Example - { "data": ["A",”C”,”z”] }
+2. The frontend application should call the REST API that you’ve created to process the data in request
+and return the response as per the logic mentioned in backend challenge.
+Details:
+Create a user interface with the following features:
+1. Text input field and submit button:
+- Accepts only valid JSON input
+- Validates JSON format on submission
+- Calls the REST API that you’ve created, with payload from the text input
+- Gets the response and then uses the following logic to render it
+2. Dropdown menu:
+- Appears after valid JSON submission
+- Contains the following sections (on UI):
+a. Characters
+b. Numbers
+c. Highest alphabet
+3. Multiselect for toggling visibility of UI sections
+- The display of Characters / Numbers / Highest alphabet should be based on this
+multiselect. For example, if only Numbers and Characters are selected in multiselect, only
+those should be visible on the UI and Highest alphabet should not be visible.
+4. The website title should be your roll number
+Eg: In the following image, “Google” is the title of the first tab.
+</p>
+</p>
+
 </p>
